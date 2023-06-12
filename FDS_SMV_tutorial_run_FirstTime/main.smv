@@ -1,32 +1,32 @@
 TITLE
- job1
+ main
 
 FDSVERSION
 FDS-6.8.0-0-g886e009-release
 
 ENDF
- job1.end
+ main.end
 
 INPF
- job1.fds
+ main.fds
 
 REVISION
 Revisio                                                                                                                                                                                                                                                        
 
 CHID
- job1
+ main
 
 CSVF
  hrr
- job1_hrr.csv
+ main_hrr.csv
 
 CSVF
  steps
- job1_steps.csv
+ main_steps.csv
 
 CSVF
  devc
- job1_devc.csv
+ main_devc.csv
 
 NMESHES
   1
@@ -165,10 +165,6 @@ PROP
 DEVICE
  T air 1 % TEMPERATURE                                                 
      1.00000     2.00000     2.80000     0.00000     0.00000    -1.00000  0  0 % null
-
-DEVICE
- T air 2 % TEMPERATURE                                                 
-     1.50000     3.00000     2.00000     0.00000     0.00000    -1.00000  0  0 % null
 
 VENTORIG
  2
@@ -334,31 +330,24 @@ CVENT
     0
 
 SMOKF3D     1   8700.000
- job1_1_1.s3d
+ main_1_1.s3d
  SOOT DENSITY
  rho_C
  kg/m3
 SMOKF3D     1      0.000
- job1_1_2.s3d
+ main_1_2.s3d
  HRRPUV
  hrrpuv
  kW/m3
 SMOKF3D     1      0.000
- job1_1_3.s3d
+ main_1_3.s3d
  TEMPERATURE
  temp
  C
 SLCF     1 # STRUCTURED &     0    30    20    20     0    30 !      1      0
- job1_1_1.sf
- TEMPERATURE
- temp
- C
-SLCF     1 # STRUCTURED &     0    30    30    30     0    30 !      2      0
- job1_1_2.sf
+ main_1_1.sf
  TEMPERATURE
  temp
  C
 DEVICE_ACT     T air 1
      1      0.00     0
-DEVICE_ACT     T air 2
-     2      0.00     0
